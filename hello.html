@@ -23,7 +23,7 @@
 </div>
 <script type="text/paperscript" canvas="canvas-1">
 var leftPath = new Path({
-    strokeColor: 'pink',
+    strokeColor: 'red',
 	opacity: 0.5
 });
 
@@ -44,7 +44,7 @@ for (var i = 0; i <= amount; i++) {
 var group = new Group({
 	children: [leftPath, rightPath],
 	transformContent: false,
-	strokeWidth: 200,
+	strokeWidth: 100,
 	strokeJoin: 'round',
 	strokeCap: 'round',
 	pivot: leftPath.position,
