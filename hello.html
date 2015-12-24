@@ -20,15 +20,15 @@
 <div class="button run" hidden>Source</div>
 <div class="explain" hidden>
 <script>
-body {
-background-color:black;
+#canvas {
+  background-color:black;
 }
 </script>
 </div>
 </div>
 <script type="text/paperscript" canvas="canvas-1">
 var leftPath = new Path({
-    strokeColor: 'red',
+    strokeColor: 'pink',
 	opacity: 0.5
 });
 
@@ -49,7 +49,7 @@ for (var i = 0; i <= amount; i++) {
 var group = new Group({
 	children: [leftPath, rightPath],
 	transformContent: false,
-	strokeWidth: 100,
+	strokeWidth: 10,
 	strokeJoin: 'round',
 	strokeCap: 'round',
 	pivot: leftPath.position,
